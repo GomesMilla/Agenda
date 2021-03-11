@@ -1,3 +1,4 @@
+//CÓDIGO ARRUMADO,ANTES O LIMITE ERA 3 AGORA É 10. COLOQUEI 3 PARA FINS DE TE TESTE DE CÓDIGO
 #include <stdio.h>
 int opc;
 int ControleAgenda=0;
@@ -41,6 +42,7 @@ void cadastrar_contato()
   do {
   printf("INSIRA UM CÓDIGO MAIOR QUE 0:");
   scanf("%i",&Agenda[ControleAgenda].codigo);
+  getchar();
   } while (Agenda[ControleAgenda].codigo<=0);
   printf("E-MAIL:");
   fgets(Agenda[ControleAgenda].email,30,stdin);
@@ -48,6 +50,7 @@ void cadastrar_contato()
   fgets(Agenda[ControleAgenda].aniversario,30,stdin);
   printf("ANOTAÇÕES:");
   fgets(Agenda[ControleAgenda].anotacoes,30,stdin);
+  getchar();
 
   ControleAgenda ++;
   }
@@ -62,7 +65,7 @@ void listar_contato(){
   if(ControleAgenda>0){
     for(int i = 0;i<ControleAgenda;i++){
 
-      printf("teste");
+      
       printf("%s\n",Agenda[i].nome);
       printf("%i\n",Agenda[i].telefone);
       printf("%i\n",Agenda[i].codigo);
@@ -117,8 +120,9 @@ int x = 10;
     else
     {
       printf("**************************************\n");
-      printf("----------OPÇÃO INVALIDA!-------------\n");
+      printf("----------OPÇÃO INVALIDA!-----------\n");
       printf("**************************************\n");
     }
     }
 }
+//CÓDIGO ARRUMADO,ANTES O LIMITE ERA 3 AGORA É 10. COLOQUEI 3 PARA FINS DE TE TESTE DE CÓDIGO
