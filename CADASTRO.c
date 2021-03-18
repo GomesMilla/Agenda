@@ -7,10 +7,10 @@ int ControleAgenda=0;
 typedef struct agenda{
 	char nome[30];
 	int telefone;
-  int codigo;
-	char email[30];
-  char aniversario[8];
-  char anotacoes[200];
+    int codigo;
+    char email[30];
+    char aniversario[8];
+    char anotacoes[200];
 } agenda;
 
 
