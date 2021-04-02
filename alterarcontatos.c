@@ -200,7 +200,7 @@ int x = 10;
     }
     else if(x==3)
     {
-    printf("FALTA");
+      alterar_contato();
     }
     else if(x==4)
     {
